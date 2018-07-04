@@ -23,6 +23,7 @@
                 <th scope="col"><?= $this->Paginator->sort('acuracidade_item') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('valor_total') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('codigo_barra') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('codigo') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -37,6 +38,7 @@
                 <td><?= h($produto->acuracidade_item) ?></td>
                 <td><?= h($produto->valor_total) ?></td>
                 <td><?= h($produto->codigo_barra) ?></td>
+                <td><?= h($produto->codigo) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $produto->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $produto->id]) ?>

@@ -14,6 +14,7 @@ use Cake\ORM\Entity;
  * @property string $acuracidade_item
  * @property string $valor_total
  * @property string $codigo_barra
+ * @property string $codigo
  */
 class Produto extends Entity
 {
@@ -34,6 +35,7 @@ class Produto extends Entity
         'quantidade' => true,
         'acuracidade_item' => true,
         'valor_total' => true,
-        'codigo_barra' => true
+        'codigo_barra' => true,
+        'codigo' => true
     ];
 }

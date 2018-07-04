@@ -68,7 +68,7 @@ class ProdutosTable extends Table
 
         $validator
             ->scalar('quantidade')
-            ->maxLength('quantidade', 100)
+            ->maxLength('quantidade', 255)
             ->requirePresence('quantidade', 'create')
             ->notEmpty('quantidade');
 
@@ -89,6 +89,12 @@ class ProdutosTable extends Table
             ->maxLength('codigo_barra', 30)
             ->requirePresence('codigo_barra', 'create')
             ->notEmpty('codigo_barra');
+
+        $validator
+            ->scalar('codigo')
+            ->maxLength('codigo', 30)
+            ->requirePresence('codigo', 'create')
+            ->notEmpty('codigo');
 
         return $validator;
     }

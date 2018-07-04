@@ -45,6 +45,10 @@
             <td><?= h($produto->codigo_barra) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Codigo') ?></th>
+            <td><?= h($produto->codigo) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($produto->id) ?></td>
         </tr>
